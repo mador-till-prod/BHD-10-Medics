@@ -1,0 +1,172 @@
+/* ניצרה */
+#safe img:nth-child(1) {
+    width: 30vw;
+    transition: 0.2s 1s transform ease-in-out;
+    transform-origin: 9.5vw;
+    transform: rotate(90deg);
+}
+
+#safe.animate img:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+/* text : safe */
+#safe img:nth-child(2) {
+    width: 13vw;
+    margin-right: 3vw;
+}
+
+#gloves {
+    width: 25vw;
+}
+
+/* נדב"ר */
+#phoneBubble {
+    width: 30vw;
+    justify-self: center;
+}
+
+.heartbeat {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    row-gap: 1vh;
+}
+
+.heartbeat :nth-child(1n) {
+    justify-self: end;
+}
+
+.heartbeat :nth-child(3n) {
+    justify-self: start;
+}
+
+.heartbeat img {
+    margin-bottom: 1vh;
+    width: 100%;
+}
+
+#voice {
+    width: 7vw;
+    position: absolute;
+    left: 8vw;
+    transform: translateY(3vh);
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+
+    0%,
+    49%,
+    100% {
+        opacity: 1;
+    }
+
+    50%,
+    99% {
+        opacity: 0;
+    }
+}
+
+/* דוגמה נדב"ר */
+.phone-example {
+    position: relative;
+    /* height: 30vh; */
+}
+
+.phone-example>img {
+    position: absolute;
+}
+
+.phone-example .phone {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.phone-example .wow {
+    position: absolute;
+    left: 100vw;
+    height: 100%;
+    transition: 0.7s 1s left linear;
+}
+
+.phone-example.animate .wow {
+    left: 0;
+}
+
+.phone-example .background {
+    position: absolute;
+    background-color: white;
+    left: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 97%;
+    width: 5vw;
+    transition: 0.5s 1.3s width linear;
+}
+
+.phone-example.animate .background {
+    width: 100vw;
+}
+
+.phone-example .arrow {
+    left: 100vw;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 7vh;
+    transition: 0.5s 1.7s left linear;
+}
+
+.phone-example.animate .arrow {
+    left: 24vw;
+}
+
+.conversation {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: baseline;
+    row-gap: 1vh;
+    column-gap: 2vw;
+    max-width: 50vw;
+    padding: 0 1vw;
+    top: 50%;
+    padding: 3vh 0;
+    transform: translateX(100vw);
+    transition: 0.5s 1.7s transform linear;
+}
+
+.phone-example.animate .conversation {
+    transform: translateX(0);
+}
+
+.conversation>* {
+    min-height: 0;
+}
+
+.conversation :nth-child(odd) {
+    justify-self: end;
+}
+
+#avpu {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    row-gap: 1vh;
+    column-gap: 6vw;
+    padding: 0 4vw;
+}
+
+#avpu>img {
+    width: 22vw;
+}
+
+#avpu>.arrow {
+    width: 4vw;
+}
+
+#oxigen {
+    width: 50vw;
+}
