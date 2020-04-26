@@ -1,0 +1,465 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v30/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} */
+html,
+body {
+  background-image: url("images/background-gray.svg");
+  border: 0px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+}
+html {
+
+  display: table;
+}
+body {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: Assistant;
+  margin: 0;
+  direction: rtl;
+  font-weight: 600;
+  /* bottom: auto; */
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  color: #4D7582;
+}
+
+
+/* header */
+.up-strip{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 2vh 7vw;
+  background-color: lightcoral;
+  background-image: url("images/up-strip.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  /* -webkit-box-shadow: 0px 4px 50px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 50px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 50px 4px rgba(0,0,0,0.75); */
+  z-index: 1;
+}
+
+.menu-icon{
+  width: 7.5vw;
+  height: 3vh;
+  margin-right: 0vw;
+  background-image: url("images/menu-white.svg");
+  background-repeat: no-repeat;
+}
+
+.i-icon{
+  width: 7.5vw;
+  height: 4vh;
+  margin-left: -3vw;
+  background-image: url("images/i.svg");
+  background-repeat: no-repeat;
+}
+
+.topic{
+  font-size: 5vw;
+  flex: 1 0 0;
+  margin-right: 4.5vw;
+  color: white;
+  text-align: right;
+}
+
+header .space{
+  /* flex: 1 0 0; */
+}
+
+#quess-card{
+  height: 30vh;
+  width: 30vh;
+  background-image: url("images/quess-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vh;
+  text-align: center;
+}
+
+.quesstion-place{
+  
+display: flex;
+  
+justify-content: space-around;
+  
+align-items: center;
+  
+margin-bottom: 2vh;
+  
+margin-top: -4vh;
+}
+
+/* .answer-place{
+  display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+} */
+
+
+.answer-place {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+  width: 78vw;
+  margin-top: 5.5vh;
+  height: 78vw;
+  gap: 2vw;
+  padding: 0 11vw;
+}
+
+.ans{
+  background-image: url("images/ans-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95em;
+  padding: 4vw;
+}
+
+.correct{
+  background-image: url("images/ans-correct.svg");
+}
+
+.worng{
+  background-image: url("images/ans-worng.svg");
+}
+
+.heart{
+  background-image: url("images/heart.svg");
+  width: 9vw;
+  height: 6vh;
+  background-repeat: no-repeat;
+}
+
+.help{
+  background-image: url("images/help.svg");
+  width: 13vw;
+    height: 8vh;
+  background-repeat: no-repeat;
+}
+
+td{
+  padding: 1.5vw;
+}
+
+#quess-value{
+    /* margin-top: 2vh; */
+    height: 8vh;
+    width: max-content;
+    padding: 5vw;
+    background-image: url(images/point.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    position: relative;
+    color: white;
+    position: relative;
+    right: 50%;
+    transform: translate(50%, 20%);
+}
+
+.life{
+  width: 13vw;
+}
+
+.split {
+  /* position: absolute; */
+  width: 100vw;
+  left: 0;
+}
+
+.split:not(img) {
+  /* position: absolute; */
+  width: 100vw;
+  left: 0;
+  height: 5px;
+  overflow: hidden;
+  margin: .5em 0;
+}
+
+.split:not(img) hr {
+  outline: dotted var(--bg-color) 17px;
+  border: solid 2px #ee755b;
+  outline-offset: -4px;
+  margin: 0;
+}
+
+.split+*:not(.number) {
+  margin-top: 8vh;
+}
+     
+.info-place{
+  height: 4vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4d7682;
+  padding: 0.5vh 0;
+}
+
+.class-name{
+  color: white;
+  width: 11.4em;
+  text-align: right;
+  margin-right: 5vw;
+}
+
+#quess-count{
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: -7.3vh;
+    z-index: 1;
+}
+
+.disable>*{
+  pointer-events: none;
+}
+
+body .inactive {
+  display: none;
+}
+
+#money-img{
+  height: 1.4em;
+  width: 2.4em;
+  margin-left: 2.6vw;
+}
+
+#money-bank{
+  color: white;
+  width: 17em;
+  text-align: end;
+}
+
+.win-page{
+  /* background-image: url(images/medalia.svg); */
+  /* background-color: white; */
+  height: 72vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  margin-top: 8vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.win-page .end-text{
+  /* position: absolute; */
+  top: 0;
+  font-size: 9vw;
+  /* background-color: white; */
+  padding: 2vh 1vw;
+  width: 100%;
+  margin-bottom: 5vh;
+  color: #1CA36D;
+}
+
+.win-page .end-money{
+  position: absolute;
+  top: 34vh;
+  transform: translateX(50%);
+  right: 50%;
+  font-size: 7vw;
+  text-align: center;
+}
+
+.win-page .medal{
+  height: 50vh;
+  position: relative;
+}
+
+.win-page .medal img{
+  height: 50vh;
+  bottom: 3vh;
+}
+
+.lose-page{
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 100%;
+  /* flex: 1 0 0; */
+  /* overflow-x: hidden; */
+}
+
+
+/* 
+.lose-page .red{
+  position: absolute;
+  width: 80%;
+  top: -7vh;
+  left: 50%;
+  transform: translateX(-50%); 
+}*/
+.lose-page .end-message{
+  position: relative;
+  text-align: center;
+  margin-top: 15vh;
+  color: #ec2429;
+}
+
+.lose-page .end-message :nth-child(1){
+  font-size: 16vw;
+}
+
+.lose-page .end-message :nth-child(2){
+  font-size: 8vw;
+}
+
+.lose-page .try-again{
+  margin-top: auto;
+  width: 50vw;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  /* height: 30vh; */
+  position: absolute;
+  bottom: 0;
+}
+
+.lose-page .try-again div{
+  position: absolute;
+  bottom: 6vh;
+  text-align: center;
+  width: 100%;
+  font-size: 4.5vh;
+}
+
+.info{
+  background-image: url("images/bgvertical.svg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.up-strip-info
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 2vh 7vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  /* -webkit-box-shadow: 0px 4px 50px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 50px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 50px 4px rgba(0,0,0,0.75); */
+  z-index: 1;
+}
+
+.play-icon{
+  width: 7.5vw;
+  height: 4vh;
+  margin-right: 3vw;
+  background-image: url("images/play.svg");
+  background-repeat: no-repeat;
+}
+
+.info .main{
+  font-size: 5vw;
+  padding: 1vh 8vw;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+}
+.info .about{
+  font-size: 8vw;
+  margin-bottom: 3vh;
+}
+
+.row{
+  line-height: 5vh;
+}
+
+.info .name{
+  font-weight: normal;
+}
+
+#logos{
+  width: 38vw;
+  align-self: center;
+}
+
+.greedy-padding {
+  flex: 1 0 0;
+}
+
+
+
+@font-face {
+  font-family: Assistant;
+  src: url(fonts/Assistant-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(fonts/Assistant-ExtraBold.ttf);
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(fonts/Assistant-ExtraLight.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(fonts/Assistant-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(fonts/Assistant-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url(fonts/Assistant-SemiBold.ttf);
+  font-weight: 600;
+}
