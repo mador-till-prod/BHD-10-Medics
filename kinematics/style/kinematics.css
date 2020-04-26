@@ -1,0 +1,529 @@
+/* INTRO */
+
+/* דוגמא להשפעה של גורם המהירות
+   שתי מכוניות מתנגשות בעץ אחת אחרי השניה
+ */
+ #velocity {
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+}
+
+#velocity div {
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    bottom: 0;
+}
+
+#velocity div.tree {
+    width: 30vw;
+    height: 20vh;
+    background-image: url(../assests/images/kinematics/tree.svg);
+}
+
+#velocity div.car {
+    transition: none;
+    animation: slowCar 6s linear 0s infinite;
+    background-image: url(../assests/images/kinematics/blue-car.svg);
+    width: 35vw;
+    height: 7vh;
+    left: 0;
+    transform: translateX(-45vw);
+    opacity: 1;
+}
+
+@keyframes slowCar {
+    0% {
+        transform: translateX(-45vw);
+        opacity: 1;
+    }
+
+    25%,
+    40% {
+        transform: translateX(50vw);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-45vw);
+        opacity: 0;
+    }
+}
+
+#velocity .car.second {
+    transition: none;
+    animation: fastCar 6s linear 0s infinite;
+    transform: translateX(0);
+    opacity: 1;
+    background-image: url(../assests/images/kinematics/red-car-animated.svg);
+    background-size: 100% 100%;
+}
+
+@keyframes fastCar {
+
+    0%,
+    50% {
+        transform: translateX(-45vw);
+        opacity: 0;
+        background-image: url(../assests/images/kinematics/red-car.svg);
+    }
+
+    51% {
+        background-image: url(../assests/images/kinematics/red-car.svg);
+        opacity: 1;
+    }
+
+    55% {
+        transform: translateX(53vw);
+    }
+
+    56% {
+        background-image: url(../assests/images/kinematics/red-car-animated.svg);
+    }
+
+    60% {
+        transform: translateX(40vw);
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* טראומה קהה */
+
+#outsideCrash {
+    position: relative;
+}
+
+#outsideCrash .arrows {
+    width: 12vw;
+    bottom: 4vw;
+    right: 25vw;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s 1.5s ease-out;
+}
+
+#outsideCrash.animate .arrows {
+    opacity: 1;
+}
+
+#slightTrauma .title img {
+    width: 50vw;
+}
+
+.slightStopCar {
+    transform: translateX(-3.5vw);
+}
+
+#girlStopsCar {
+    width: 50vw;
+}
+
+#girlStopsCar .car {
+    transform: translateX(-60vw);
+    width: 50vw;
+    transition: 0.8s 1s transform linear;
+}
+
+#girlStopsCar.animate .car {
+    transform: translateX(-8vw);
+}
+
+#girlStopsCar .girl {
+    align-self: flex-end;
+    width: 16vw;
+    transform: translateX(-14vw);
+}
+
+#fall {
+    width: 30vw;
+    animation: hover 2s ease-in-out 0s infinite;
+}
+
+.fall {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.manFall {
+    width: 50vw;
+    margin-bottom: -18vw;
+    z-index: 1;
+    transform: translateY(-25vh);
+    transition: 1s 1s transform ease-in;
+}
+
+#matressFall.animate .manFall {
+    animation: bounce 1s linear;
+    transform: translateY(1vh);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-25vh);
+    }
+
+    50% {
+        transform: translateY(1vh);
+    }
+
+    75% {
+        transform: translateY(-5vh);
+    }
+
+    100% {
+        transform: translateY(1vh);
+    }
+}
+
+#asphaltFall.animate .manFall {
+    transform: translateY(0);
+}
+
+.animate .pain {
+    opacity: 1;
+}
+
+.pain {
+    width: 32vw;
+    z-index: 1;
+    margin-bottom: -22vw;
+    opacity: 0;
+    transition: 0.2s 2s opacity linear;
+}
+
+
+
+@keyframes hover {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1.5vh);
+    }
+}
+
+#rullerGirl {
+    width: 20vw;
+    float: left;
+}
+
+#matressFall .manFall {
+    margin-bottom: -10vw;
+}
+
+#bone {
+    width: 22vw;
+}
+
+#backCrash img {
+    width: 40vw;
+}
+
+#backCrash .back {
+    transform: translateX(-40vw);
+    transition: 0.5s 1s transform ease-out;
+}
+
+#backCrash.animate .back {
+    transform: translateX(10vw);
+}
+
+#sideCrash img {
+    width: 45vw;
+}
+
+#sideCrash .back {
+    transform: translate(34vw, -2vh);
+    transition: 0.5s 1s transform ease-out;
+    width: 45vw;
+}
+
+#sideCrash .front {
+    transform: translate(-37vw, 2vh);
+    transition: 0.5s 1s transform ease-out;
+    z-index: 1;
+    width: 44vw;
+}
+
+#turnOver img {
+    width: 50vw;
+}
+
+#times6 {
+    flex-direction: column;
+    transform: translateY(2vh);
+}
+
+#times6 .fly {
+    width: 37vw;
+    align-self: baseline;
+    /* animation: diagonal 2s ease-in-out 0s infinite; */
+}
+
+@keyframes diagonal {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-2vw, 1vh);
+    }
+}
+
+
+#times6 .car {
+    transform: none;
+    width: 50vw;
+}
+
+#bikes {
+    height: 25vh;
+}
+
+#bikes .bike {
+    width: 38vw;
+    align-self: flex-end;
+}
+
+#bikes .fly {
+    width: 41vw;
+    align-self: flex-start;
+}
+
+#stabbed {
+    margin-right: 2vw;
+    flex-grow: 0.5;
+}
+
+.split-text {
+    flex: 1 0 0;
+    align-self: baseline;
+}
+
+#knifeOut {
+    flex-grow: 1;
+}
+
+#rullerKnife {
+    position: absolute;
+    width: 49vw;
+    left: 5vw;
+    bottom: -2vh;
+}
+
+#knifeDamage {
+    position: relative;
+    width: 62vw;
+    z-index: 1;
+}
+
+.pedestrians {
+    position: absolute;
+    width: 61vw;
+    left: 0;
+    transform: translateX(-19vw);
+    align-self: flex-end;
+}
+
+.pedestrians img {
+    width: 100%;
+    transform: translateX(-100%);
+    transition: 0.3s 1s transform linear;
+}
+
+.pedestrians.animate img {
+    transform: translateX(0);
+}
+
+.blast {
+    margin-bottom: 2vh;
+    padding: 0 2vw;
+}
+
+.blast img {
+    width: 0;
+}
+
+#firstBlast .explosion {
+    flex: 8 0 0;
+}
+
+#firstBlast .fly {
+    flex: 7 0 0;
+    align-self: flex-start;
+}
+
+#farBlast .explosion {
+    flex: 8 0 0;
+}
+
+#farBlast .fly {
+    flex: 5 0 0;
+    align-self: flex-start;
+    transform: translateY(-5vh);
+}
+
+#sideCrash {
+    margin-bottom: 5.5vh;
+}
+
+#closeSpace {
+    position: relative;
+}
+
+#closeSpace .explosion {
+    flex: 2 0 0;
+    align-self: flex-end;
+    margin-left: 5vw;
+}
+
+#closeSpace .fly {
+    flex: 2 0 0;
+    align-self: baseline;
+    margin-left: 4vw;
+    margin-top: 5vh;
+}
+
+#closeSpace .wall {
+    flex: 1 0 0;
+    align-self: flex-start;
+}
+
+#closeSpace .arrows {
+    position: absolute;
+    width: 44vw;
+    right: 30vw;
+    bottom: 12vh;
+}
+
+#girlWall .fly {
+    width: 0;
+    flex: 5 0 0;
+    align-self: flex-end;
+    transform: translate(-74vw, -15vh);
+    transition: 0.5s 1s transform linear;
+}
+
+#girlWall.animate .fly {
+    transform: translate(17vw, -4vh);
+}
+
+#girlWall .wall {
+    width: 0;
+    flex: 3 0 0;
+}
+
+#radiation {
+    width: 0;
+    flex: 3 0 0;
+}
+
+.cut {
+    margin-left: 5vw;
+    position: relative;
+}
+
+.cut .girl {
+    width: 50vw;
+    position: relative;
+    transform: translateX(-20vw);
+}
+
+.cut .glass {
+    width: 26vw;
+    transform: translate(32vw, -23vh);
+    transition: 0.5s 1s transform linear;
+    position: absolute;
+}
+
+.cut.animate .glass {
+    transform: translate(-12.5vw, -40vw);
+    /* position: absolute; */
+}
+
+.cut .glass :first-child() {
+    width: 26vw;
+}
+
+.cut .blood {
+    width: 7vw;
+    transform: translate(7vw, 6.6vw);
+    transition: 0.1s 1.5s opacity linear;
+    opacity: 0;
+    position: absolute;
+}
+
+.cut.animate .blood {
+    opacity: 1;
+
+}
+
+#trauma-open {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1vh;
+    column-gap: 2vw;
+}
+
+table.hover {
+    text-align: right;
+}
+
+#remeber {
+    margin-left: 4vw;
+}
+
+
+.glass {
+    position: absolute;
+}
+
+.number .highlight{
+    line-height: 5vh;
+}
+
+/* intro */
+
+img.tree {
+    width: 30vw;
+}
+
+img.car {
+    align-self: flex-end;
+    width: 34vw;
+    transform: translateX(-30vw);
+    transition: 0.5s transform ease-out;
+}
+
+.animate img.car {
+    transform: translateX(14vw);
+}
+
+.animate img.car.switch-src {
+    transform: translateX(18vw);
+}
