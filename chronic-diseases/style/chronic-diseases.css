@@ -1,0 +1,247 @@
+nav>ul li {
+    font-size: 3.5vw;
+}
+
+.floating {
+    float: left;
+    width: 13vw;
+    padding-right: 5vw;
+    padding-left: 8vw;
+}
+
+.fade-img {
+    position: relative;
+    height: 16vw;
+}
+
+.fade-img :first-child {
+    opacity: 1;
+    animation: fade 6s linear 4s infinite;
+}
+
+.fade-img :nth-child(2) {
+    opacity: 0;
+    animation: fade 6s linear 1s infinite;
+}
+
+
+.fade-img img {
+    position: absolute;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+
+}
+
+#funnel {
+    width: 65vw;
+}
+
+#fatMan>img {
+    width: 20vw;
+}
+
+/* ×’×•×¨×ž×™ ×¡×™×›×•×Ÿ ×œ×”×©×ž× ×” */
+.artery {
+    width: 24vw;
+}
+
+.bloodpressure {
+    width: 50vw;
+}
+
+
+.bmi {
+    font-size: 3vh;
+}
+
+.bmi .equal {
+    width: 5vw;
+    /* margin: 0 3vw; */
+}
+
+.bmi hr {
+    outline: solid black;
+}
+
+.bmi .ans {
+    width: 12vw;
+    text-align: center;
+    font-size: 2.3vh;
+    line-height: 2vh;
+}
+
+.bmi .calc {
+    width: 23vw;
+}
+
+.bmi .calc>input {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 0.8vh 0;
+    background-color: unset;
+    /* outline: none; */
+    color: #476d79;
+}
+
+.bmi .calc>div {
+    text-align: center;
+}
+
+.bmi .divide {
+    outline: solid 1px;
+    width: 100%;
+}
+
+.bmi .ruller {
+    /* width: 24vw; */
+    text-align: left;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* text-align: left; */
+}
+
+.bmi .ruller img {
+    height: 13vh;
+    /* float: left;
+    margin-right: 2vw; */
+    margin-right: 2vw;
+}
+
+.bmi .ruller>div {}
+
+
+.dirug :nth-child(2) {
+    margin-right: 10vw;
+}
+
+.dirug :nth-child(3) {
+    margin-right: 17vw;
+}
+
+.sugar-cubes {
+    width: 25vw;
+    margin-top: -3vh;
+}
+
+.dna-long {
+    position: absolute;
+    left: 18vw;
+    width: 100%;
+    bottom: 7vh;
+    z-index: 0;
+}
+
+.kidneyEye {
+    margin-top: -7vh;
+}
+
+/* eye */
+.kidneyEye :first-child {
+    transform: translateX(12vw);
+}
+
+.sockglove {
+    width: 40vw;
+}
+
+.tareshet {
+    width: 35vw;
+}
+
+.salt {
+    width: 35vw;
+    margin-top: -10vh;
+}
+
+.animate.salt {
+    animation: tilt 5s 1s linear infinite;
+}
+
+@keyframes tilt {
+
+    0%,
+    10%,
+    20%,
+    100% {
+        transform: rotate(0);
+    }
+
+    5%,
+    15% {
+        transform: rotate(20deg);
+    }
+}
+
+.brain {
+    width: 24vw;
+    margin-top: 1vh;
+}
+
+.eye {
+    width: 36vw;
+}
+
+.kidneys img{
+    width: 23vw
+}
+
+.kidneys :nth-child(2) {
+    transform: scaleX(-1);
+    margin-right: 5vw;
+}
+
+.anemia-example img {
+    width: 30vw;
+}
+
+.veggies {
+    display: inline;
+    width: 30vw;
+    margin-right: 5vw;
+    transform: translateY(2vh);
+}
+
+.pic {
+    margin-right: 3vw;
+    transform: translateY(50%);
+    width: 8vw;
+    margin-top: -100%;
+}
+
+.burgerchocolate {
+    width: 15vw;
+}
+
+.run {
+    width: 15vw;
+}
+
+.smoke {
+    width: 27vw;
+    margin-right: 3vw;
+}
