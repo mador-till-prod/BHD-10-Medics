@@ -61,7 +61,7 @@ body {
   width: 7.5vw;
   height: 3vh;
   margin-right: 0vw;
-  background-image: url("images/menu-white.svg");
+  background-image: url("images/home.svg");
   background-repeat: no-repeat;
 }
 
@@ -363,11 +363,23 @@ body .inactive {
 }
 
 .info{
+  position: absolute;
+  transition: 1s ease-in-out;
+  transition-property: clip-path, -webkit-clip-path;
+  
+  -webkit-clip-path: inset(0 0 100% 0);
+  clip-path: inset(0 0 100% 0);
   background-image: url("images/bgvertical.svg");
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.info.transition {
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+
 }
 
 .up-strip-info
@@ -389,12 +401,16 @@ body .inactive {
 .play-icon{
   width: 7.5vw;
   height: 4vh;
-  margin-right: 3vw;
+  /* margin-right: 3vw; */
+  margin-left: -3vw;
   background-image: url("images/play.svg");
   background-repeat: no-repeat;
 }
 
 .info .main{
+  /* transition: 1s clip-path ease-in-out; */
+  /* clip-path: inset(0 0 100% 0); */
+  /* clip-path: inset(0 0 0 0); */
   font-size: 5vw;
   padding: 1vh 8vw;
   color: white;
