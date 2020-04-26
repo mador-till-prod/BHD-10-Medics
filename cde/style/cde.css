@@ -1,0 +1,55 @@
+.arrow-left {
+    display: inline;
+    width: 5vw;
+}
+
+#phone {
+    width: 19vw;
+}
+
+.magnifyingGlass {
+    width: 16vw;
+    margin-top: -6.5vh;
+    margin-left: 9vw;
+    transform: rotate(-45deg);
+}
+
+#magnifyingEye {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#magnifyingEye :first-child {
+    transform-origin: bottom;
+    position: absolute;
+    width: 25vw;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-2vh) rotate(-66deg);
+}
+
+#magnifyingEye.animate :first-child {
+    animation: swing 3s 1s linear 2;
+}
+
+@keyframes swing {
+
+    0%,
+    100% {
+        transform: translateY(-2vh) rotate(-66deg);
+    }
+
+    50% {
+        transform: translateY(2vh) rotate(-30deg);
+    }
+}
+
+#magnifyingEye :nth-child(2) {
+    width: 51vw;
+}
+
+#notePen {
+    width: 50vw;
+}
