@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 154.3 127.3" enable-background="new 0 0 154.3 127.3" xml:space="preserve" preserveAspectRatio="none">
+<g>
+	<polygon fill="#C3D7DC" points="139.7,127.2 0,127.3 0,13.7 139.7,13.7 	"/>
+	<g>
+		
+			<rect x="108.6" y="15" transform="matrix(0.7071 0.7071 -0.7071 0.7071 54.1531 -87.432)" opacity="0.8" fill="#E86978" width="48" height="13.2"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_1794_" x="254.8" y="-40.8" width="493.7" height="233.8"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1794_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		
+			<ellipse transform="matrix(1 -3.963841e-003 3.963841e-003 1 -0.43 2.2063)" fill="#90C66C" cx="556.4" cy="109.6" rx="529.1" ry="137.5"/>
+	</g>
+	<use xlink:href="#SVGID_1794_"  overflow="visible" fill="none" stroke="#BCBEC0" stroke-miterlimit="10"/>
+</g>
+</svg>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css"rel="stylesheet" type="text/css" />
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <script src="code.js"></script>
+    <title>SAB</title>
+</head>
+            <body>
+                <div class="absolute turn-div">
+                    <p class="turn">הפכו את המסך לרוחב</p>
+                    <p class="ok">אוקיי</p>
+                </div>
+                <div class="header">
+                    <img class="absolute navigate" src="assets/images/home-white.svg" />
+                    <img class="absolute about" src="assets/images/about.svg" />
+                    <h1 class="absolute head">SAB</h1>
+                </div>
+                <div class="absolute about-div">
+                    <div class="about-text">
+                      <p class="inline-block"><b>ראש מדור טי"ל: </b> רס"ן מיגל לויתן</p>
+                      <p class="inline-block"><b>ניהול הפרויקט: </b> רב"ט גל גנסין</p>
+                      <p class="inline-block"> <b>אפיון תוצר הדרכתי: </b> סמל נועה עובדיה וטור' דרור אברמסון</p>
+                      <p class="inline-block"><b>תכנות: </b> טור' דרור אברמסון</p>
+                      <p class="inline-block"><b>עיצוב: </b> טור' מייה ליבנה</p>
+                      <p class="inline-block"><b>מומחה תוכן בה"ד 10: </b> סמל עמית סגל</p>
+                      <p class="inline-block"><b>גרסה: </b> 1.0.2020</p>
+                    </div>
+                    <img class= "logo" src="assets/images/about/logos.svg" />
+                </div>
+                <div class="game">
+                    <img class="circle" src="assets/images/s.svg" />
+                    <div class="instructions">
+                        <p class="instructions-text">הגעתם לזירת אירוע ובה אדם שוכב על הרצפה. מה השלב הראשון בטיפול?</p>
+                        <img class="next" src="assets/images/next.svg" />
+                        <img class="absolute check2" src="assets/images/check.svg" />
+                    </div>
+                    <img class="absolute man" src="assets/images/man.svg" />
+                    <p class="absolute exeminations" id="exemination1">ביטחון המטפל והמטופל</p>
+                    <p class="absolute exeminations" id="exemination2">פתיחת נתיב אוויר</p>
+                    <p class="absolute exeminations" id="exemination3">התרשמות מדרכי האוויר</p>
+                    <div class="stage1">
+                         <!-- gun -->
+                        <img class="absolute" id="clue2" src="assets/images/clue2.svg" />
+                        <!-- glasses -->
+                        <img class="absolute" id="clue1" src="assets/images/clue1.svg" />
+                        <!-- wound -->
+                        <img class="absolute" id="clue3" src="assets/images/clue3.svg" />
+                        <!-- phone -->
+                        <img class="absolute" id="clue4" src="assets/images/clue4.svg" />
+                        <div class="steps">
+                            <div class="stepss step1">
+                                <img class="step" src="assets/images/1.svg" /> 
+                                <p class="text">מתרשמים מזירת האירוע ומסיפור המקרה, על מנת להסיק מסקנות ולצפות פגיעות אפשריות</p>
+                            </div>
+                            <div class="stepss step2">
+                                <img class="step" src="assets/images/2.svg" />
+                                <p class="text">משיבים באש, מעבירים את הפצוע למקום בטוח ונוצרים את נשקו</p>
+                            </div>
+                            <div class="stepss step3">
+                                <img class="step" src="assets/images/3.svg" />  
+                                <p class="text">עוצרים דימומים פורצים שמהווים סכנת חיים מיידית</p> 
+                            </div>
+                        </div>
+                        <div class="absolute nextstep">
+                            <p class="correct">נכון מאוד! בסוף מדווחים דיווח ראשוני על מנת לקבל סיוע רפואי.</p>
+                            <p class="what">מה עלינו להגיד בדיווח הראשוני?</p>
+                            <input class="input" type="text" placeholder="כתבו..."/>
+                            <img class="continue" src="assets/images/next.svg" />
+                            <img class="absolute check1" src="assets/images/check.svg" />
+                        </div>
+                    </div>
+                    <div class="absolute stage2">
+                        <div class="airway-cont">
+                            <div class="airway-cont1">
+                                <p class="airway" id="airway4">פתיחת נתיב אוויר</p>
+                                <p class="airway" id="airway1">בדיקת הכרה</p>
+                                <p class="airway" id="airway3">סילוק הפרשות</p>
+                            </div>
+                            <div class="airway-cont2">
+                                <p class="airway" id="airway6">התרשמות מאזור הצוואר</p>
+                                <p class="airway" id="airway2">התרשמות מדרכי אוויר</p>
+                                <p class="airway" id="airway5">A.W</p>
+                            </div>
+                        </div>
+                        <div class="absolute conscious-cont">
+                            <div class="conscious-cont1">
+                                <p class="conscious" id="conscious3" draggable="true">מגיב לכאב</p>
+                                <p class="conscious" id="conscious2" draggable="true">מגיב לקול</p>
+                            </div>
+                            <div class="conscious-cont2">
+                                <p class="conscious" id="conscious1" draggable="true">הכרה מלאה</p>
+                                <p class="conscious" id="conscious4" draggable="true">מחוסר הכרה</p>
+                            </div>
+                        </div>
+                        <div class="absolute divs">
+                            <div class="div drag-target" id="div1"><p>1</p></div>
+                            <div class="div drag-target" id="div2"><p>2</p></div>
+                            <div class="div drag-target" id="div3"><p>3</p></div>
+                            <div class="div drag-target" id="div4"><p>4</p></div>
+                        </div>
+                        <div class="absolute options2">
+                            <div class="div2 radios1">
+                                <img class="radio" id="radio3" src="assets/images/option.svg" />
+                                <p class="option1">נאטום חורי ירי</p>
+                            </div>
+                            <div class="div2 radios2">
+                                <img class="radio" id="radio4" src="assets/images/option.svg" />
+                                <p class="option1">נמדוד את קצב הנשימה</p>
+                            </div>
+                            <div class="div2 radios3">
+                                <img class="radio" id="radio5" src="assets/images/option.svg" />
+                                <p class="option1">נסרוק את בית החזה</p>
+                            </div>
+                            <div class="div2 radios4">
+                                <img class="radio" id="radio6" src="assets/images/option.svg" />
+                                <p class="option1">ניתן חמצן</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="absolute wrong" src="assets/images/x.svg" />
+                    <div class="yes-or-no">
+                        <p class="absolute exeminations" id="yes">כן</p>
+                        <p class="absolute exeminations" id="no">לא</p>
+                    </div>
+                </div>
+                <div class="absolute closing">
+                    <h1 class="absolute goodJob">כל הכבוד!</h1>
+                    <p class="absolute finished">סיימתם את תרגול SAB.</p>
+                    <p class="absolute resaults"></p>
+                </div>
+                <div class="dragover"></div>
+            </body>
+</html>
