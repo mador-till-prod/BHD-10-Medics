@@ -1,0 +1,595 @@
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
+    font-weight: 500;
+}
+
+
+body {
+    font-family: "assistant";
+    direction: rtl;
+    margin: 0px;
+    background-image: url("assets/images/bg1.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+p {
+    margin: 0px;
+}
+
+.black {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    z-index: 99;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    height: 15%;
+    background-image: url("assets/images/bar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    right: 8%;
+    font-weight: 400;
+    font-size: 130%;
+    margin: 0;
+}
+
+.about {
+    width: 5.5%;
+    left: 3%;
+    top: 7%;
+}
+
+.navigate {
+    width: 15%;
+    height: 65%;
+    right: -3%;
+    top: 6;
+}
+
+.opening {
+    padding-right: 10%;
+    color: #0D2849;
+    width: 90%;
+    height: 70%;
+    bottom: 1%;
+    font-size: 100%;
+    font-weight: 550;
+}
+
+.closing {
+    top: 48%;
+    display: none;
+    font-weight: 500;
+    width: 100%;
+    height: 25%;
+}
+
+.start {
+    width: 50%;
+    height: 30%;
+    left: 0%;
+    bottom: 3%;
+}
+
+.play {
+    color: white;
+    font-size: 160%;
+    left: 36%;
+    bottom: 12%;
+}
+
+.goodluck {
+    font-size: 100%;
+    margin-top: 5%;
+}
+
+.car {
+    width: 52%;
+    height: 30%;
+    right: 47.6%;
+    top: 34%;
+    display: none;
+    z-index: 99;
+}
+
+#clue1 {
+    width: 60%;
+    height: 30%;
+    left: 25%;
+    bottom: 5%;
+    display: none;
+}
+
+#clue2 {
+    width: 52%;
+    height: 65%;
+    right: 32%;
+    display: none;
+}
+
+#clue3 {
+    width: 22%;
+    height: 22%;
+    bottom: 35%;
+    left: 14%;
+    display: none;
+    z-index: 99;
+}
+
+#clue5 {
+    width: 10%;
+    height: 12%;
+    bottom: 25%;
+    right: 59%;
+    display: none;
+}
+
+#clue6 {
+    display: none;
+    width: 20%;
+    height: 10%;
+    right: 50%;
+    top: 87%;
+    z-index: 98;
+    opacity: 0;
+}
+
+#woman {
+    width: 10%;
+    height: 30%;
+    right: 50%;
+    bottom: -10%;
+    display: none;
+    z-index: 98;
+}
+
+#clue8 {
+    width: 7%;
+    height: 15%;
+    right: 59%;
+    bottom: 22%;
+    display: none;
+    z-index: 98;
+}
+
+#clue9 {
+    width: 30%;
+    height: 30%;
+    right: 34.5%;
+    top: 60.7%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+#clue10 {
+    width: 90%;
+    height: 50%;
+    top: 5%;
+    display: none;
+    opacity: 0;
+    z-index: 98;
+}
+
+#clue11 {
+    width: 3%;
+    height: 5%;
+    left: -22%;
+    bottom: 65%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+#clue12 {
+    width: 3%;
+    height: 5%;
+    bottom: 75%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+    left: 1%;
+}
+
+#clue121 {
+    width: 5%;
+    height: 9%;
+    left: 22%;
+    bottom: 62%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+#clue13 {
+    width: 4%;
+    height: 5.5%;
+    left: -23%;
+    bottom: 78%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+#clue14 {
+    width: 3%;
+    height: 5%;
+    left: 15%;
+    bottom: 48%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+#clue141 {
+    width: 2%;
+    height: 5%;
+    left: -13%;
+    bottom: 75%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+#clue142 {
+    width: 3%;
+    height: 5%;
+    left: 15%;
+    bottom: 90%;
+    display: none;
+    z-index: 98;
+    opacity: 0;
+}
+
+.questions {
+    width: 60%;
+    height: 68%;
+    background-color: none;
+    background-image: url("assets/images/question-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 5%;
+    display: none;
+    right: 2%;
+    padding: 5%;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.knife {
+    width: 70%;
+    height: 40%;
+    background-image: url("assets/images/question-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 5%;
+    display: none;
+    right: 2%;
+    padding: 5%;
+    padding-top: 25%;
+    font-weight: 700;
+    font-size: 100%;
+    z-index: 98;
+    text-align: center;
+    color: #0D2849;
+}
+
+.radio {
+    margin-top: 1%;
+    margin-left: 2%;
+    height: 70%;
+    overflow-y: auto;
+    box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,0.35);
+}
+
+.radios {
+    width: 5%;
+    border: none;
+}
+
+.option {
+    display: flex;
+}
+
+.answer {
+    margin-top: 3%;
+    margin-right: 1%;
+    width: 75%;
+    font-size: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hint {
+    left: 0%;
+    bottom: 5%;
+    width: 12%;
+    height: 12%;
+    border: none;
+    border-radius: 1%;
+    display: none;
+    z-index: 99;
+}
+
+.back {
+    right: 1%;
+    bottom: 5%;
+    width: 10%;
+    height: 10%;
+    border: none;
+    border-radius: 1%;
+    display: none;
+}
+
+.check {
+    width: 15%;
+    border: none;
+    border-radius: 1%;
+    bottom: 12%;
+    left: 10%;
+}
+
+.stabbed {
+    width: 10%;
+    height: 40%;
+    right: 50%;
+    top: 55%;
+    display: none;
+}
+
+.exploaded {
+    width: 90%;
+    right: 60%;
+    bottom: 1%;
+    display: none;
+    z-index: 97;
+}
+
+.long {
+    width: 35%;
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    color: #4E7582;
+    margin-right: 6.5%;
+    font-size: 100%;
+    font-weight: bold;
+    width: 80%;
+}
+
+.feedback {
+    margin-top: 1%;
+    display: none;
+    width: 15%;
+    right: 85%;
+    top: 1%;
+}
+
+.smoke {
+    display: none;
+    z-index: 97;
+    width: 70%;
+    right: 0;
+    bottom: -10%;
+}
+
+.bomb {
+    width: 30%;
+    height: 30%;
+    right: 34.5%;
+    bottom: 9%;
+    display: none;
+    z-index: 97;
+}
+
+.goodJob {
+    width: 40%;
+    top: 90%;
+    right: 8%;
+    margin: 0;
+    font-size: 400%;
+    font-weight: bold;
+    color: #0D2849;
+}
+
+.finished {
+    width: 34%;
+    color: #0D2849;
+    font-weight: bold;
+    top: 104%;
+    right: 58%;
+}
+
+.resaults {
+    width: 35%;
+    color: #0D2849;
+    font-weight:  bold;
+    top: 121%;
+    right: 54.5%;
+    text-align: center;
+}
+
+.clue6glow {
+    opacity: 0;
+    width: 30%;
+    height: 20%;
+    right: 45%;
+    top: 85%;
+}
+
+.clue10glow {
+    opacity: 0;
+    width: 30%;
+    right: 30%;
+    top: 5%;
+}
+
+.clue11glow {
+    opacity: 0;
+    width: 8%;
+    z-index: 97;
+    margin-left: -153%;
+    margin-top: -4%
+}
+
+.clue12glow {
+    opacity: 0;
+    width: 9%;
+    z-index: 97;
+    margin-top: -26%;
+    margin-left: -76.5%
+}
+
+.clue13glow {
+    opacity: 0;
+    width: 9%;
+    z-index: 97;
+    margin-top: -8%;
+    margin-left: -153%;
+}
+
+.clue14glow {
+    margin-right: 81%;
+    opacity: 0;
+    width: 8%;
+    z-index: 97;
+    margin-top: -8%
+}
+
+.glow {
+    height: 18.75%;
+    width: 60%;
+    bottom: 0;
+    right: 15%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 97;
+    display: none;
+}
+
+.clues {
+    position: absolute;
+    bottom: 20%;
+}
+
+.relative {
+    position: relative;
+}
+
+.head-glow {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 4%;
+    align-items: center;
+}
+
+.about-div {
+    background-image: url("assets/images/about/bghorizontal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 79%;
+    width: 95%;
+    padding-right: 5%;
+    padding-top: 5%;
+    top:15%;
+    z-index: 100;
+    color: white;
+    display: none;
+    font-weight: 400;
+    font-size: 130%;
+}
+
+.logo {
+    height: 20%;
+    margin-top: -20%;
+    margin-right: 77%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.about-p {
+    margin: 0;
+}
+
+.turn-div {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #e8e8e8, #f3f3f3);
+    text-align: center;
+    padding-top: 20%;
+    font-weight: 600;
+    color: rgb(15, 40, 73);
+}
+
+.turn {
+    font-size: 200%;
+}
+
+.ok {
+    font-size: 140%;
+    text-decoration: underline;
+    color: #009ac4;
+}
