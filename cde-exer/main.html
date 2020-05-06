@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css"rel="stylesheet" type="text/css" />
+    <script src="assets/jquery-3.4.1.min.js"></script>
+    <script src="code.js"></script>
+    <title>CDE</title>
+</head>
+<body>
+    <div class="absolute turn-div">
+        <p class="turn">הפכו את המסך לרוחב</p>
+        <p class="ok">אוקיי</p>
+    </div>
+    <div class="header">
+        <img class="absolute navigate" src="assets/images/home-white.svg" />
+        <img class="absolute about" src="assets/images/about.svg" />
+        <h1 class="absolute head">CDE</h1>
+    </div>
+    <div class="absolute about-div">
+        <div class="about-text">
+          <p class="about-p"><b>ראש מדור טי"ל: </b>רס"ן מיגל לויתן</p>
+          <p class="about-p"><b>ניהול הפרויקט: </b>רב"ט גל גנסין</p>
+          <p class="about-p"><b>אפיון תוצר הדרכתי: </b>סמל נועה עובדיה וטור' דרור אברמסון</p>
+          <p class="about-p"><b>תכנות: </b>טור' דרור אברמסון</p>
+          <p class="about-p"><b>עיצוב: </b>טור' מייה ליבנה</p>
+          <p class="about-p"><b>מומחה תוכן בה"ד 10: </b>סמל עמית סגל</p>
+          <p class="about-p"><b>גרסה: </b>1.0.2020</p>
+        </div>
+        <img class="logo" src="assets/images/about/logos.svg" />
+      </div>
+    <div class="game">
+        <img class="circle" src="assets/images/c.svg" />
+         <div class="absolute instructions">
+            <p class="absolute instructions-text">הגעתם לזירת אירוע ובה אדם מחוסר הכרה, ובוצעו בו כבר שלבי הSAB. מהו השלב הבא בטיפול?</p>
+            <img class="absolute next" src="assets/images/next.svg" />
+            <img class="absolute check" src="assets/images/check.svg" />
+        </div>
+        <img class="absolute man" src="assets/images/man.svg" />
+        <p class="absolute exeminations" id="exemination1">עצירת דימומים</p>
+        <p class="absolute exeminations" id="exemination2">בדיקה נוירולוגית</p>
+        <p class="absolute exeminations" id="exemination3">פינוי</p>
+        <img class="absolute injury" src="assets/images/injury.svg" />
+        <div class="absolute circ-steps">
+            <div class="circ-cont1">
+                <p class="circ circ1" id="circ1">סריקת דימומים</p>
+                <p class="circ circ1" id="circ6">תיעוד בטופס 101</p>
+                <p class="circ circ1" id="circ3">התרשמות מבטן ואגן</p>
+            </div>
+            <div class="circ-cont2">
+                <p class="circ" id="circ4">בדיקת דופק כמותי</p>
+                <p class="circ" id="circ7">קו פינוי מיידי</p>
+                <p class="circ" id="circ2">עצירת דימומים</p>
+                <p class="circ" id="circ5">ניטור לחץ דם</p>
+            </div>
+        </div>
+        <div class="absolute yes-or-no">
+            <p class="answer" id="yes">כן</p>
+            <p class="answer" id="no">לא</p>
+        </div>
+        <div class="absolute options">
+            <div class="option1 div">
+                <img class="option" id="option1" src="assets/images/option.svg" />
+                <p class="text">רגל ימין ← יד ימין ← רגל שמאל ← יד שמאל</p>
+            </div>
+            <div class="option2 div">
+                <img class="option" id="option2" src="assets/images/option.svg" />
+                <p class="text">רגל ימין ← רגל שמאל ← צוואר</p>
+            </div>
+            <div class="option3 div">
+                <img class="option" id="option3" src="assets/images/option.svg" />
+                <p class="text">יד ימין ← יד שמאל ← רגל ימין ← רגל שמאל</p>
+            </div>
+        </div>
+        <div class="absolute answers">
+            <div class="answer1 cont">
+                <img class="options2" id="answer1" src="assets/images/option.svg" />
+                <p class="answer-text">השלמת הפשטה ועצירת דימומים, כיסוי, דיווח</p>
+            </div>
+            <!--  correct -->
+            <div class="answer2 cont">
+                <img class="options2" id="answer2" src="assets/images/option.svg" />
+                <p class="answer-text">השלמת הפשטה ועצירת דימומים, כיסוי, קשירה לאלונקה והחזרת אמצעי מיגון, דיווח</p>
+            </div>
+            <div class="answer3 cont">
+                <img class="options2" id="answer3" src="assets/images/option.svg" />
+                <p class="answer-text">כיסוי למניעת היפותרמיה, העלאה לאמבולנס, דיווח</p>
+            </div>
+        </div>
+        <img class="absolute feedback" src="assets/images/vee.svg" />
+    </div>
+    <div class="closing">
+        <p class="absolute goodjob">כל הכבוד!</p>
+        <p class="absolute resaults"></p>
+    </div>
+</body>
+</html>
