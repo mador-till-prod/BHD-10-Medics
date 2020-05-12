@@ -1,0 +1,668 @@
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Regular.ttf");
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "assistant";
+    src: url("assets/fonts/Assistant-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "ktavyadclm";
+    src: url("assets/fonts/ktavyadclm_bolditalic_0.ttf"), url("assets/fonts/KtavYadCLM-BoldItalic_0.otf");
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "assistant";
+    direction: rtl;
+    margin: 0;
+    background-image: url("assets/images/bg6.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 100%;
+    color: rgb(15,40,73);
+    width: 100%;
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.absolute {
+    position: absolute;
+} 
+
+.header {
+    width: 100%;
+    color: white;
+    height: 10vh;
+    background-image: url("assets/images/bar.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 50px 4px rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    right: 20%;
+    font-weight: 470;
+    font-size: 120%;
+    margin: 0;
+}
+
+.about {
+    height: 50%;
+    left: 5%;
+    top: 25%;
+}
+
+.navigate {
+    width: 6%;
+    right: 5%;
+}
+
+.about-div {
+    background-image: url("assets/images/about/bgvertical.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 95%;
+    padding-right: 5%;
+    top: 10%;
+    z-index: 100;
+    color: white;
+    display: none;
+    direction: rtl;
+}
+
+.logo {
+    height: 12%;
+    margin-top: 22%;
+    margin-right: 25%;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.opening {
+    background-image: url("assets/images/welcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 18%;
+    right: 4%;
+    width: 75%;
+    height: 59%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 15%;
+    font-size: min(5vmin, 2.5vmax);
+    color: rgb(78,117,130);
+}
+
+.opening-text {
+    width: 90%;
+}
+
+.start {
+    margin: 0;
+    color: black;
+    bottom: 20%;
+    left: 0;
+}
+
+.start-text {
+    font-family: "ktavyadclm";
+    display: inline-block;
+    margin: 0;
+    font-size: 130%;
+}
+
+.square {
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: -0.5%;
+    margin-left: 2%;
+}
+
+.line {
+    width: 65%;
+    margin: 0;
+    bottom: 15%;
+    right: 5%;
+}
+
+.goodluck {
+    font-size: 150%;
+}
+
+.exams {
+    display: none;
+}
+
+.exam {
+    width: 30%;
+}
+
+#palse {
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+#breathing {
+    margin-left: 20%;
+}
+
+#fever {
+    margin-left: 50%;
+    position: relative;
+    top: 20%;
+}
+
+#pressure {
+    width: 40%;
+    margin-top: -10%;
+}
+
+#urine {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    width: 35%;
+}
+
+.palse-game {
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.breathing-game {
+    display: none;
+}
+
+.fever-game {
+    display: none;
+}
+
+.pressure-game {
+    display: none;
+}
+
+.urine-game {
+    display: none;
+}
+
+.text {
+    font-size: min(5vmin, 2.5vmax);
+}
+
+.exem {
+    top: 20%;
+    width: 10%;
+}
+
+.dragover {
+    top: 90;
+    left: 90;
+    z-index: 100;
+}
+
+.bold {
+    display: inline-block;
+    font-weight: 900;
+    margin: 0;
+}
+
+.instructions {
+    background-image: url("assets/images/note.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 10%;
+    right: 13%;
+    width: 53%;
+    height: 22%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    z-index: 99;
+    font-weight: 500;
+}
+
+.question {
+    background-image: url("assets/images/note.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 8%;
+    right: 13%;
+    width: 71%;
+    height: 42%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 6%;
+    padding-bottom: 2%;
+    display: none;
+    z-index: 99;
+    position: relative;
+    direction: rtl;
+}
+
+.game {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.bottles {
+    width: 100%;
+    height: 40%;
+    top: 60%;
+}
+
+.bottle {
+    display: inline-block;
+}
+
+.container {
+    width: 35%;
+    right: 27%;
+}
+
+.water {
+    width: 35vw;
+}
+
+.check {
+    width: 12%;
+    right: 80%;
+    bottom: 5%;
+}
+
+#water1 {
+    right: -10%;
+    bottom: 40%;
+}
+
+#water2 {
+    right: -20%;
+    bottom: 30%;
+}
+
+.savior {
+    width: 40vw;
+    right: 53%;
+}
+
+.penpaper {
+    width: 30vw;
+    bottom: 4%;
+    left: 5%;
+}
+
+.option {
+    width: 8%;
+    display: inline-block;
+}
+
+.div {
+    display: flex;
+}
+
+.answer-text {
+    margin-top: 5%;
+    margin-bottom: 0.8%;
+    margin-right: 2%;
+    font-size: min(5vmin, 2.5vmax);
+    font-weight: 500;
+}
+
+.question-title {
+    font-size: min(5vmin, 2.5vmax);
+    margin-right: 3.1%;
+}
+
+#target {
+    top: 30%;
+}
+
+.x {
+    width: 60%;
+    top: 53%;
+    right: 20%;
+    display: none;
+    z-index: 99;
+}
+
+.feedback {
+    width: 20%;
+    top: -4%;
+    right: -8%;
+    display: none;
+}
+
+.fever-test {
+    display: none;
+    margin-top: 50%;
+}
+
+#pen {
+    width: 20vw;
+    bottom: 20%;
+    right: 2%;
+}
+
+.bell {
+    width: 20%;
+    bottom: 17%;
+    right: 37%;
+}
+
+.cotton {
+    width: 12vw;
+    bottom: 8%;
+    left: 8%;
+}
+
+.cottonsoaked {
+    width: 12vw;
+    bottom: 8%;
+    left: 8%;
+}
+
+.madhom {
+    width: 33vw;
+    bottom: 10%;
+    right: 15%;
+}
+
+.goodjob {
+    width: 70%;
+}
+
+.back {
+    width: 10%;
+    bottom: 3%;
+    left: 3%;
+    display: none; 
+}
+
+.patient1 {
+    width: 70%;
+    bottom: 27.3%;
+    z-index: 98;
+    right: 0;
+}
+
+.object-div {
+    bottom: 8%;
+    width: 79%;
+    right: 10.5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.breathing-object-div {
+    bottom: 8%;
+    width: 79%;
+    right: 10.5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pressure-object-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    right: 4%;
+    width: 92%;
+    bottom: 2%;
+}
+
+.closing {
+    bottom: 8%;
+    width: 79%;
+    right: 10.5%;
+    display: none;
+    justify-content: space-around;
+}
+
+.objects {
+    width: 20vw;
+}
+
+.question-text {
+    font-size: min(5vmin, 2.5vmax);
+    margin-right: 5%;
+    margin-top: 15%;
+    width: 90%;
+}
+
+.input {
+    width: 13%;
+    background-color: rgb(238,221,196);
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(15,40,73);
+}
+
+.patient2 {
+    height: 100%;
+    right: 18%;
+    top: 10%;
+}
+
+.objects-text {
+    font-weight: bold;
+    font-size: min(5vmin, 2.5vmax);
+    margin: 0;
+    height: 1%;
+    margin-top: 13%;
+}
+
+.patient-div {
+    top: 10%;
+    right: 15%;
+    height: 70%;
+    display: none;
+}
+
+.point {
+    width: 25%;
+    visibility: hidden;
+}
+
+#point1 {
+    top: 10%;
+    right: 38%;
+}
+
+#point2 {
+    top: 24%;
+    right: 10%;
+}
+
+#point3 {
+    top: 38%;
+    right: 0;
+}
+
+#point4 {
+    bottom: 35%;
+    right: 28%;
+}
+
+#point5 {
+    bottom: 8%;
+    right: 28%;
+}
+
+#point6 {
+    bottom: 1%;
+    right: 36%;
+}
+
+#cup {
+    width: 50%;
+    bottom: 20%;
+    right: 30%;
+}
+
+#gloves {
+    width: 30%;
+    left: 2%;
+    bottom: 20%;
+}
+
+#urinestick {
+    width: 38vw;
+    bottom: 8%;
+    left: 10%;
+}
+
+#urineguide {
+    width: 20%;
+    bottom: 10%;
+}
+
+.patient-breathing-div {
+    width: 50%;
+    bottom: 26.3%;
+}
+
+#ches1 {
+    width: 49%;
+    bottom: 27%;
+    right: 35%;
+    visibility: hidden;
+}
+
+#face0 {
+    width: 34%;
+    top: 18%;
+    right: 52%;
+    visibility: hidden;
+}
+
+#ear0 {
+    width: 15vw;
+}
+
+#eye1 {
+    width: 25vw;
+}
+
+.breathing-text {
+    color: rgb(78,117,130);
+    margin-right: 20%;
+}
+
+.next {
+    width: 10%;
+    bottom: 6%;
+    left: 14%;
+    display: none;
+    z-index: 99;
+}
+
+.objects-pressure {
+    width: 20%;
+}
+
+.window {
+    width: 30%;
+    margin-top: 10%;
+}
+
+.arrow {
+    width: 20%;
+    bottom: 27.3%;
+    left: 14%;
+}
+
+.pressure-objects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pressure-check-text {
+    font-size: min(5vmin, 2.5vmax);
+}
+
+.patient-pressure {
+    margin-right: 20%;
+    z-index: 98;
+}
+
+.pressure-div {
+    display: none;
+}
+
+.number {
+    display: none;
+    z-index: 99;
+    bottom: 23vw;
+    transform: translateY(-50%);
+    right: 21vw;
+    font-weight: bold;
+    margin: 0;
+    font-size: 4vw;
+}
+
+.manjet {
+    width: 60vw;
+    z-index: 99;
+    bottom: 8%;
+    right: 3%;
+}
+
+.stetoscope {
+    width: 60vw;
+    z-index: 98;
+    bottom: 4%;
+    left: 3%;
+}
+
+#arm {
+    width: 30%;
+    bottom: 15%;
+    right: 25%;
+    visibility: hidden;
+}
+
+.pressure-text {
+    font-size: min(5vmin, 2.5vmax);
+    top: 10%;
+    right: 17%;
+    width: 60%;
+    text-align: center;
+}
+
+.drag {
+    display: none;
+    font-size: min(5vmin, 2.5vmax);
+    font-weight: bold;
+}

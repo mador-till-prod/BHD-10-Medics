@@ -1,19 +1,207 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  
-  <title>בדיקות שגרה</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="assets/jquery-3.4.1.min.js"></script>
+        <script src="code.js"></script>
+        <title>בדיקות שגרה</title>
+    </head>
 
-
-</head>
-
-<body>
-  <h1>אנחנו עדיין עובדים על האתר</h1>
-<h3>מדור טי"ל- קריית ההדרכה</h3>
-
-
-</body>
-
-</HTML>
+    <body>
+    <div class="absolute about-div">
+        <h1>אודות</h1>
+        <p><b>ראש מדור טי"ל: </b> רס"ן מיגל לויתן</p>
+        <p><b>בקרת הלומדה: </b> רס"ן מיגל לויתן</p>
+        <p> <b>הפקת הלומדה: </b> סמל נועה עובדיה, רב"ט גל גנסין, טור' דרור אברמסון</p>
+        <p><b>עיצוב הלומדה: </b> טור' מייה ליבנה</p>
+        <p><b>תכנות: </b> טור' דרור אברמסון</p>
+        <p class="invisible">איטאח</p>
+        <p><b>מנהל הפרויקט: </b> דרגה פרטי משפחה</p>
+        <p><b>מומחה תוכן: </b> סמל עמית סגל</p>
+        <img class= "logo" src="assets/images/about/logos.svg" />
+    </div>
+  <div class="absolute header">
+      <img class="absolute navigate" src="assets/images/home-white.svg" />
+      <img class="absolute about" src="assets/images/about.svg" />
+      <h1 class="absolute head">בדיקות שגרה</h1>
+  </div>
+  <div class="game opening-game">
+    <div class="absolute opening">
+        <p class="opening-text">ברוכים הבאים! <br> לחצו על כל אחד מהמכשירים לביצוע הבדיקה. </p>
+        <p class="goodluck">בהצלחה!</p>
+        <div class="absolute start">
+            <div>
+              <img class="square" src="assets/images/option.svg" />
+              <p class="start-text">התחילו</p>
+            </div>
+            <img class="absolute line" src="assets/images/underline.svg" />
+        </div>
+    </div>
+    <div class="exams">
+        <img class="exam exam1" id="palse" src="assets/images/startpulse.svg" />
+        <img class="exam exam2" id="breathing" src="assets/images/startbreathing.svg" />
+        <img class="exam exam3" id="fever" src="assets/images/startheat.svg" />
+        <img class="exam exam4" id="pressure" src="assets/images/startpressure.svg" />
+        <img class="exam exam5" id="urine" src="assets/images/starturinecheck.svg" />
+    </div>
+  </div>
+  <div class="palse-game">
+    <div class="question palse-question">
+        <h1 class="question-text"></h1>
+        <div class="options">
+            <div class="option1 div">
+                <img class="option" id="palse-option1" src="assets/images/option.svg" />
+                <p class="answer1 answer-text">כן</p>
+            </div>
+            <div class="option2 div">
+                <img class="option" id="palse-option2" src="assets/images/option.svg" />
+                <p class="answer2 answer-text">לא</p>
+            </div>
+        </div>
+        <img class="absolute check" src="assets/images/check.svg" />
+        <img class="absolute feedback" src="assets/images/vee.svg" />  
+    </div>
+    <div class="palse-check">
+        <img class="absolute patient1" src="assets/images/person1.svg" />
+        <div class="absolute patient-div">
+            <img class="patient2" src="assets/images/person1full.svg" />
+            <img class="absolute point target" id="point1" src="assets/images/glow.svg" />
+            <img class="absolute point target" id="point2" src="assets/images/glow.svg" />
+            <img class="absolute point target" id="point3" src="assets/images/glow.svg" />
+            <img class="absolute point target" id="point4" src="assets/images/glow.svg" />
+            <img class="absolute point target" id="point5" src="assets/images/glow.svg" />
+            <img class="absolute point target" id="point6" src="assets/images/glow.svg" />
+        </div>
+        <div class="absolute object-div">
+            <img class="objects hand" id="hand"  drag-origin="30,30" src="assets/images/hand.svg" />
+            <img class="objects clock" id="clock" src="assets/images/clock.svg" />
+        </div>
+    </div>
+    <img class="absolute x" src="assets/images/x.svg" />
+    <img class="absolute back" src="assets/images/back.svg" />
+    <div class="absolute dragover"></div>
+  </div>
+  <div class="game breathing-game">
+    <div class="breathing-text">
+        <h1 class="question-text"></h1>  
+    </div>
+        <div class="absolute patient-breathing-div">
+            <img class="patient-breathing" src="assets/images/person2.svg" />
+            <img class="absolute target0" id="face0" src="assets/images/glow.svg" />
+            <img class="absolute target1" id="ches1" src="assets/images/glow.svg" />
+        </div>
+        <div class="absolute breathing-object-div">
+            <img class="objects-breathing step1" id="ear0" drag-origin="50,40" src="assets/images/ear0.svg" />
+            <img class="objects-breathing step2"  id="eye1" drag-origin="40,30" src="assets/images/eye1.svg" />
+        </div>
+        <img class="absolute next" src="assets/images/next.svg" />
+    <img class="absolute x" src="assets/images/x.svg" />
+    <img class="absolute back" src="assets/images/back.svg" />
+    <div class="absolute dragover"></div>
+  </div>
+  <div class="game fever-game">
+    <div class="absolute instructions">
+        <div class="text"></div>
+    </div>
+    <div class="absolute question">
+        <h1 class="question-title"></h1>
+        <div class="options">
+            <div class="option1 div">
+                <img class="option" id="fever-option1" src="assets/images/option.svg" />
+                <p class="answer1 answer-text"></p>
+            </div>
+            <div class="option2 div">
+                <img class="option" id="fever-option2" src="assets/images/option.svg" />
+                <p class="answer2 answer-text"></p>
+            </div>
+            <div class="option3 div">
+                <img class="option" id="fever-option3" src="assets/images/option.svg" />
+                <p class="answer3 answer-text"></p>
+            </div>
+        </div>
+        <img class="absolute check" src="assets/images/check.svg" />
+        <img class="absolute feedback" src="assets/images/vee.svg" />  
+        <p class="drag">גררו את השלב הבא!</p>
+    </div>
+    <div class="absolute bottles">
+        <img class="absolute bottle container target" id="container" src="assets/images/container1.svg" />
+        <img class="absolute bottle water step1" id="water1" drag-origin="75,50" src="assets/images/watershadow.svg" />
+        <img class="absolute bottle water step1" id="water2" drag-origin="75,50" src="assets/images/watershadow.svg" />
+        <img class="absolute bottle savior step2" id="savior" drag-origin="75,50" src="assets/images/saviorshadow.svg" />
+    </div>
+    <img class="absolute nothing penpaper step3" id="penpaper" drag-origin="75,50" src="assets/images/penpapershadow.svg" />
+    <div class="fever-test">
+        <img class="absolute bell" id="bell" src="assets/images/paamonit.svg" />
+        <img class="absolute nothing cotton step4" id="cotton" drag-origin="75,50" src="assets/images/cottonshadow.svg" />
+        <img class="absolute nothing madhom step6" id="madhom" drag-origin="75,50" src="assets/images/madhomshadow.svg" />
+        <img class="absolute nothing pen step7" id="pen" drag-origin="75,50" src="assets/images/penshadow.svg" />
+    </div>
+    <img class="absolute x" src="assets/images/x.svg" />
+    <img class="absolute back" src="assets/images/back.svg" />
+    <div class="absolute dragover"></div>
+  </div>
+  <div class="game pressure-game">
+    <h1 class="absolute pressure-text"></h1>
+    <div class="question">
+        <h1 class="question-text"></h1>
+        <div class="options">
+            <div class="option1 div">
+                <img class="option" id="pressure-option1" src="assets/images/option.svg" />
+                <p class="answer1 answer-text">כן</p>
+            </div>
+            <div class="option2 div">
+                <img class="option" id="pressure-option2" src="assets/images/option.svg" />
+                <p class="answer2 answer-text">לא</p>
+            </div>
+        </div>
+        <img class="absolute check" src="assets/images/check.svg" />
+        <img class="absolute feedback" src="assets/images/vee.svg" />  
+    </div>
+    <img class="window" src="assets/images/windowopen.svg" />
+    <img class="absolute arrow" src="assets/images/arrow.svg" />
+        <div class="absolute patient-breathing-div">
+            <img class="patient-pressure" src="assets/images/person3.svg" />
+            <img class="absolute target" id="arm" src="assets/images/glow.svg" />
+        </div>
+        <div class="absolute pressure-object-div">
+            <p class="pressure-check-text"></p>
+            <div class="pressure-objects">
+                <img class="objects-pressure" id="weight" drag-origin="75,50" src="assets/images/exercise.svg" />
+                <img class="objects-pressure" id="coffee" drag-origin="75,50" src="assets/images/coffee.svg" />
+                <img class="objects-pressure" id="cigarette" drag-origin="75,50" src="assets/images/cigarette.svg" />
+            </div>
+        </div>
+        <div class="pressure-div">
+            <img class="absolute manjet step1" id="manjet" drag-origin="20,20" src="assets/images/manjet1.svg" />
+            <img class="absolute stetoscope step2" id="stetoscope" drag-origin="75,50" src="assets/images/stetoscope1.svg" />
+            <p class="absolute number">180</p>
+        </div>
+        <img class="absolute next" src="assets/images/next.svg" />
+    <img class="absolute x" src="assets/images/x.svg" />
+    <img class="absolute back" src="assets/images/back.svg" />
+    <div class="absolute dragover"></div>
+  </div>
+  <div class="game urine-game">
+    <div class="absolute instructions">
+        <div class="text"></div>
+        <img class="absolute next" src="assets/images/next.svg" />
+    </div>
+    <div class="absolute bottles">
+        <img class="absolute step1 target" id="cup" src="assets/images/urine1.svg" />
+        <img class="absolute step2" id="gloves" drag-origin="75,50" src="assets/images/gloves.svg" />
+        <img class="absolute step3" id="urinestick" drag-origin="75,50" src="assets/images/urinestickshadow.svg" />
+        <img class="absolute step4" id="urineguide" drag-origin="75,50" src="assets/images/urineguide.svg" />
+    </div>
+    <img class="absolute x" src="assets/images/x.svg" />
+    <img class="absolute back" src="assets/images/back.svg" />
+    <div class="absolute dragover"></div>
+  </div>
+  <div class="absolute closing">
+      
+  </div>
+  </body>
+</html>
