@@ -189,7 +189,7 @@ nav a {
 
 /* space between each elemet in subject */
 .section>*:not(:last-child) {
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 
 /* note section diffrent colors */
