@@ -839,6 +839,13 @@ table tr {
   border-spacing: 6vw 1vh;
 }
 
+.smaller {
+  width: 70%;
+}
+
+.bigger {
+  width: 100%;
+}
 
 /* FONTS */
 @font-face {
