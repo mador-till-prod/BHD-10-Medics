@@ -839,6 +839,24 @@ table tr {
   border-spacing: 6vw 1vh;
 }
 
+.smaller {
+  width: 80%;
+  float: left;
+}
+
+.bigger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bigger>img {
+  /* margin-right: 60%; */
+  width: 40%;
+}
+
+.even-smaller {
+  width: 50%;
+}
 
 /* FONTS */
 @font-face {
